@@ -31,7 +31,8 @@ $cctv_list = array(
     "cctv4k16_36m" => "http://live-tpgq.cctv.cn/live/cctv4k16.m3u8,http://liveali-tpgq.cctv.cn/live/",
     "cctv4k_25m" => "http://live-tp4k.cctv.cn/live/4K0219.stream/playlist.m3u8,http://liveali-tp4k.cctv.cn/live/4K0219.stream/",
     "cctv4k_36m" => "http://live-tpgq.cctv.cn/live/cctv4k.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv8k_36m" => "http://live-tp4k.cctv.cn/live/4K36M/playlist.m3u8,http://liveali-tp4k.cctv.cn/live/4K36M/"
+    "cctv8k_36m" => "http://live-tp4k.cctv.cn/live/4K36M/playlist.m3u8,http://liveali-tp4k.cctv.cn/live/4K36M/",
+    "cctv8k_60m" => "http://live-tp4k.cctv.cn/live/4K60M/playlist.m3u8,http://liveali-tp4k.cctv.cn/live/4K60M/"
 );
 $channel = $_GET['channel'] or $channel = "cctv1_10m";
 $uid = $_GET['uid'] or $uid = "1234123122";
