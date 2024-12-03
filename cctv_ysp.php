@@ -1,40 +1,34 @@
 <?php
 $cache = new Cache(3600, "cache/");
 $cctv_list = array(
-    "cctv1_10m" => "http://live-tpgq.cctv.cn/live/cctv1.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv2_10m" => "http://live-tpgq.cctv.cn/live/cctv2.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv3_10m" => "http://live-tpgq.cctv.cn/live/cctv3.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv4_10m" => "http://live-tpgq.cctv.cn/live/cctv4.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv5_10m" => "http://live-tpgq.cctv.cn/live/cctv5.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv5p_10m" => "http://live-tpgq.cctv.cn/live/cctv5p.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv7_10m" => "http://live-tpgq.cctv.cn/live/cctv7.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv8_10m" => "http://live-tpgq.cctv.cn/live/cctv8.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv9_10m" => "http://live-tpgq.cctv.cn/live/cctv9.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv10_10m" => "http://live-tpgq.cctv.cn/live/cctv10.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv11_10m" => "http://live-tpgq.cctv.cn/live/cctv11.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv12_10m" => "http://live-tpgq.cctv.cn/live/cctv12.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv13_10m" => "http://live-tpgq.cctv.cn/live/cctv13.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv14_10m" => "http://live-tpgq.cctv.cn/live/cctv14.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv15_10m" => "http://live-tpgq.cctv.cn/live/cctv15.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv16_10m" => "http://live-tpgq.cctv.cn/live/cctv16.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv17_10m" => "http://live-tpgq.cctv.cn/live/cctv17.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cgtnar_10m" => "http://live-tpgq.cctv.cn/live/cgtnar.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cgtndoc_10m" => "http://live-tpgq.cctv.cn/live/cgtndoc.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cgtnen_10m" => "http://live-tpgq.cctv.cn/live/cgtnen.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cgtnfr_10m" => "http://live-tpgq.cctv.cn/live/cgtnfr.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cgtnru_10m" => "http://live-tpgq.cctv.cn/live/cgtnru.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cgtnsp_10m" => "http://live-tpgq.cctv.cn/live/cgtnsp.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv16_25m" => "http://live-tp4k.cctv.cn/live/CCTV16-4K.stream/playlist.m3u8,http://liveali-tp4k.cctv.cn/live/CCTV16-4K.stream/",
-    "cctv4k_10m" => "http://live-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8,http://liveali-tp4k.cctv.cn/live/4K10M.stream/",
-    "cctv4k10m" => "http://live-tpgq.cctv.cn/live/cctv4k10m.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv4k1610m" => "http://live-tpgq.cctv.cn/live/cctv4k1610m.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv4k16_36m" => "http://live-tpgq.cctv.cn/live/cctv4k16.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv4k_25m" => "http://live-tp4k.cctv.cn/live/4K0219.stream/playlist.m3u8,http://liveali-tp4k.cctv.cn/live/4K0219.stream/",
-    "cctv4k_36m" => "http://live-tpgq.cctv.cn/live/cctv4k.m3u8,http://liveali-tpgq.cctv.cn/live/",
-    "cctv8k_36m" => "http://live-tp4k.cctv.cn/live/4K36M/playlist.m3u8,http://liveali-tp4k.cctv.cn/live/4K36M/",
-    "cctv8k_60m" => "http://live-tp4k.cctv.cn/live/4K60M/playlist.m3u8,http://liveali-tp4k.cctv.cn/live/4K60M/",
-    "cctv8k_120m" => "http://liveali-tp4k.cctv.cn/live/8K120M/playlist.m3u8,http://liveali-tp4k.cctv.cn/live/8K120M/"
-
+    "cctv1_10m" => "Live1717729995180256",
+    "cctv2_10m" => "Live1718261577870260",
+    "cctv3_10m" => "Live1718261955077261",
+    "cctv4_10m" => "Live1718276148119264",
+    "cctv5_10m" => "Live1719474204987287",
+    "cctv5p_10m" => "Live1719473996025286",
+    "cctv7_10m" => "Live1718276412224269",
+    "cctv8_10m" => "Live1718276458899270",
+    "cctv9_10m" => "Live1718276503187272",
+    "cctv10_10m" => "Live1718276550002273",
+    "cctv11_10m" => "Live1718276603690275",
+    "cctv12_10m" => "Live1718276623932276",
+    "cctv13_10m" => "Live1718276575708274",
+    "cctv14_10m" => "Live1718276498748271",
+    "cctv15_10m" => "Live1718276319614267",
+    "cctv16_10m" => "Live1718276256572265",
+    "cctv164k_36m" => "Live1704966749996185",
+    "cctv164k_10m" => "Live1704966749996185",
+    "cctv17_10m" => "Live1718276138318263",
+    "cctv4k_36m" => "Live1704872878572161",
+    "cctv4k_10m" => "Live1704872878572161",
+    "cctv8k_36m" => "Live1688400593818102",
+    "cgtn_10m" => "Live1719392219423280",
+    "cgtnfr_10m" => "Live1719392670442283",
+    "cgtnru_10m" => "Live1719392779653284",
+    "cgtnar_10m" => "Live1719392885692285",
+    "cgtnsp_10m" => "Live1719392560433282",
+    "cgtnen_10m" => "Live1719392360336281"
 );
 $channel = $_GET['channel'] or $channel = "cctv1_10m";
 $uid = $_GET['uid'] or $uid = "1234123122";
@@ -42,34 +36,81 @@ if (!array_key_exists($channel, $cctv_list)) {
     echo "Channel not found!";
 }
 $datas = explode(",", $cctv_list[$channel]);
-$data = get_url($channel, $datas[0], $uid, $datas[1], $cache);
-$data = preg_replace('/(.*?.ts)/i', $datas[1] . '$1', $data);
-header("Content-Disposition:attachment;filename=" . $channel . ".m3u8");
+$data = get_url($channel, $datas[0], $uid, $cache);
+header("content-type=application/x-mpegURL;filename=" . $channel . ".m3u8");
 echo $data;
-function get_url($id, $url, $uid, $path, $cache)
+function get_url($id, $hid, $uid,$cache)
 {
     //global $cache, $uid;
-    $playUrl = $cache->get($id.$uid);
+    $playUrl = $cache->get($id . $uid);
     if (!$playUrl) {
+        $url = "https://ytpaddr.cctv.cn/gsnw/live";
+        $dd = '{
+    "rate": "",
+    "systemType": "android",
+    "id": "",
+    "userId": "",
+    "clientSign": "cctvVideo",
+    "deviceId": {
+        "serial": "",
+        "imei": "",
+        "android_id": "42e4f5c90dc7f060"
+    }
+}';
+        $requestData = json_decode($dd, true);
+        $requestData['id'] = $hid;
+        $jsonData = json_encode($requestData);
+        $ch = curl_init();
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $jsonData);
+        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+        curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, [
+            'Content-Type: application/json'
+        ]);
+        $response = curl_exec($ch);
+        if (curl_errno($ch)) {
+            echo 'cURL 错误: ' . curl_error($ch);
+        }
+        curl_close($ch);
+        $retData = json_decode($response, true);
+        $retData = json_decode($response, true);
+        $videoList=$retData && isset($retData['data']['videoList']);
+        $url = $videoList ? $retData['data']['videoList'][0]['url'] : '';
+        $url = $videoList ? $retData['data']['videoList'][1]['url'] : '';
         $bstrURL = "https://ytpvdn.cctv.cn/cctvmobileinf/rest/cctv/videoliveUrl/getstream";
-        $postData = 'appcommon={"ap":"cctv_app_tv","an":"央视投屏助手","adid":" '.$uid.'","av":"1.1.7"}&url=' . $url;
+        $postData = 'appcommon={"ap":"cctv_app_tv","an":"央视投屏助手","adid":" ' . $uid . '","av":"1.1.7"}&url=' . $url;
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ch, CURLOPT_URL, $bstrURL);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
         curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
-        curl_setopt($ch, CURLOPT_HTTPHEADER, array("User-Agent: cctv_app_tv", "Referer: api.cctv.cn", "UID: " . $uid));
         curl_setopt($ch, CURLOPT_POST, TRUE);
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
+        $APPRANDOMSTR = uniqid();
+        $secretKey = "5f39826474a524f95d5f436eacfacfb67457c4a7";
+        $rawSign = "5f39826474a524f95d5f436eacfacfb67457c4a7e7e259bbb0ac4848ba70921c860a1216" . $APPRANDOMSTR;
+        $APPSIGN = md5($rawSign);
+        $headers = [
+            "User-Agent: cctv_app_tv",
+            "Referer: api.cctv.cn",
+            "UID: $uid",
+            "APPID: $secretKey",
+            "APPSIGN: $APPSIGN",
+            "APPRANDOMSTR: $APPRANDOMSTR"
+        ];
+        curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
         $data = curl_exec($ch);
         curl_close($ch);
         $obj = json_decode($data);
         $playUrl = $obj->url;
-
-        $cache->put($id.$uid, $playUrl);
+        $cache->put($id . $uid, $playUrl);
     }
     $ch = curl_init();
-    while (1){
+    $path = substr($playUrl, 0, strrpos($playUrl, '/') + 1);
+    while (1) {
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, TRUE);
         curl_setopt($ch, CURLOPT_URL, $playUrl);
         curl_setopt($ch, CURLOPT_HTTPHEADER, array("User-Agent: cctv_app_tv", "Referer: api.cctv.cn", "UID: " . $uid));
@@ -82,6 +123,7 @@ function get_url($id, $url, $uid, $path, $cache)
             break;
         }
     }
+    $data = preg_replace('/(.*?.ts)/i', $path . '$1', $data);
     curl_close($ch);
     return $data;
 }
