@@ -91,7 +91,7 @@ function get_url($id, $hid, $uid,$cache)
         curl_setopt($ch, CURLOPT_POSTFIELDS, $postData);
         $APPRANDOMSTR = uniqid();
         $secretKey = "5f39826474a524f95d5f436eacfacfb67457c4a7";
-        $rawSign = "5f39826474a524f95d5f436eacfacfb67457c4a7e7e259bbb0ac4848ba70921c860a1216" . $APPRANDOMSTR;
+        $rawSign = "5f39826474a524f95d5f436eacfacfb67457c4a7c4068ea020ce4683a197bb88a47a39dc" . $APPRANDOMSTR;
         $APPSIGN = md5($rawSign);
         $headers = [
             "User-Agent: cctv_app_tv",
