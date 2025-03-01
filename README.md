@@ -5,5 +5,6 @@
 "UID":"*****"
 给了一个py调用mpv例子，其余自行解决
 
-不再更新，建议使用
+# # 不再更新
+建议使用
 https://github.com/wxhwz/ysptp
